@@ -32,7 +32,7 @@ API_KEY = "sk-test-123456"
 
 ---
 
-🚀 How to Run
+## 🚀 How to Run
 In VS Code:
 
 Press F5 to open the Extension Development Host
