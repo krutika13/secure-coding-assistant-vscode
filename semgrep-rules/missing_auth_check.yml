@@ -1,0 +1,15 @@
+rules:
+  - id: missing-auth
+    patterns:
+      - pattern: |
+          @app.route($X)
+          def $FUNC(...):
+              ...
+      - pattern-not-inside: |
+          @app.route($X)
+          @login_required
+          def $FUNC(...):
+              ...
+    message: "Missing authentication check on sensitive route"
+    languages: [python]
+    severity: WARNING
