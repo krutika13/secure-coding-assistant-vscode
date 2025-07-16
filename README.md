@@ -27,7 +27,7 @@ This extension fills that gap by acting like a **Security Agent** that watches y
 ## 🔍 What It Detects
 
 ✅ **Hardcoded Secrets**
-```python
+
 API_KEY = "sk-test-123456"
 
 ---
